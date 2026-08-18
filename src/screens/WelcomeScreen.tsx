@@ -27,7 +27,11 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onContinue }) => {
     <div className="flex min-h-screen flex-col justify-between bg-gradient-to-b from-slate-50 via-white to-blue-50/40 dark:from-[#0B1120] dark:via-[#0E1729] dark:to-[#131D31] px-5 py-8 sm:px-8">
       {/* Top Header & Emblem */}
       <div className="mx-auto flex w-full max-w-md flex-col items-center pt-6 text-center">
-        <JWMinistryLogo size={104} className="rounded-3xl shadow-xl" />
+        <JWMinistryLogo
+          size={112}
+          isAuthenticating={isAuthenticating}
+          className="rounded-3xl shadow-xl"
+        />
 
         <h1 className="mt-5 text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
           JW Ministry App
